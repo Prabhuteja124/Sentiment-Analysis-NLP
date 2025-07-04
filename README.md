@@ -1,88 +1,91 @@
-Sentiment Analysis NLP Project
-==============================
+# Sentiment Analysis NLP Project
 
-Overview
---------
-This project implements a modular and extensible Natural Language Processing (NLP) pipeline for sentiment classification of text data (e.g., tweets and social media posts) into three categories: Positive, Neutral, and Negative. It leverages traditional machine learning models and is designed for scalability to incorporate deep learning models in the future.
+## Overview
+This project implements a modular and extensible Natural Language Processing (NLP) pipeline for sentiment classification of text data (e.g., tweets and social media posts) into three categories: **Positive**, **Neutral**, and **Negative**. It leverages traditional machine learning models and is structured to allow future integration of deep learning approaches.
 
-Key Features
-------------
-- Sentiment Classification: Classifies text into Positive, Neutral, or Negative sentiments.
-- Models: Logistic Regression, Support Vector Machine (SVM), and Ridge Classifier.
-- Tech Stack: Python, Scikit-learn, Pandas, NLTK, FastAPI (optional for deployment).
-- Evaluation Metrics: Accuracy, F1-Score, ROC-AUC.
-- Testing: Unit tests for preprocessing and model pipeline using pytest.
-- Modular Design: Structured for easy extension to deep learning models (e.g., BiLSTM, BERT).
+---
 
-Project Structure
------------------
-Sentiment-Analysis-NLP/
-├── data/                    # Raw and processed datasets
-├── models/                  # Trained model files
-├── notebooks/               # Jupyter notebooks for exploration
-├── src/                     # Source code
-│   ├── app/                 # FastAPI application (optional)
-│   ├── data_preprocessing/  # Text preprocessing scripts
-│   ├── models/              # Model training and evaluation scripts
-│   ├── utils/               # Utility functions and helpers
-├── tests/                   # Unit tests for preprocessing and pipeline
-├── requirements.txt         # Python dependencies
-├── main.py                  # Main script to run the training pipeline
-├── .gitignore               # Git ignore file
-└── README.md                # Project documentation
+## Key Features
+- **Sentiment Classification**: Classifies text into Positive, Neutral, or Negative sentiments.
+- **Models**: Logistic Regression, Support Vector Machine (SVM), Ridge Classifier.
+- **Tech Stack**: Python, Scikit-learn, Pandas, NLTK, FastAPI (optional for deployment).
+- **Evaluation Metrics**: Accuracy, F1-Score, ROC-AUC.
+- **Testing**: Unit tests using `pytest` for text preprocessing and model pipeline.
+- **Modular Design**: Easy to extend with advanced models like BiLSTM or BERT.
 
-Prerequisites
--------------
-- Python 3.8+
+---
+
+## Project Structure
+- Sentiment-Analysis-NLP/
+    ├── data/                    # Raw and processed datasets
+    ├── models/                  # Trained model files
+    ├── notebooks/               # Jupyter notebooks for exploration
+    ├── src/                     # Source code
+    │   ├── app/                 # FastAPI application
+    │   ├── data_preprocessing/  # Text preprocessing scripts
+    │   ├── models/              # Model training and evaluation scripts
+    │   ├── utils/               # Utility functions and helpers
+    ├── tests/                   # Unit tests for preprocessing and pipeline
+    ├── requirements.txt         # Python dependencies
+    ├── main.py                  # Main script to run the training pipeline
+    ├── .gitignore               # Git ignore file
+    └── README.md                # Project documentation.
+
+
+---
+
+## Prerequisites
+
+- Python 3.8 or higher
 - Git
 - Virtual environment (recommended)
 
-Installation
-------------
+---
 
-1. Clone the Repository:
-   git clone https://github.com/Prabhuteja124/Sentiment-Analysis-NLP.git
-   cd Sentiment-Analysis-NLP
+## Installation
 
-2. Create and Activate a Virtual Environment:
-   python -m venv venv
+### 1. Clone the Repository
 
-   On Windows:
-   venv\Scripts\activate
+<!-- ```bash -->
+git clone https://github.com/Prabhuteja124/Sentiment-Analysis-NLP.git
+cd Sentiment-Analysis-NLP 
 
-   On Linux/Mac:
-   source venv/bin/activate
+### 2. Create and Activate a Virtual Environment
 
-3. Install Dependencies:
-   pip install -r requirements.txt
+#### On Windows
+python -m venv venv
+venv\Scripts\activate
 
-Usage
------
+#### On Linux / macOS
+python3 -m venv venv
+source venv/bin/activate
 
-1. Update Data Paths:
-   Ensure the data paths in the `src/` folder are correctly set to avoid errors.
+### 3. Install Dependencies
+- pip install -r requirements.txt
 
-2. Run the Training Pipeline:
-   python main.py
+## Usage
 
-   Alternatively, use pre-trained models located in the `models/` directory for inference or further experimentation.
+### 1. Update Data Paths
+ - Ensure that all file paths in the src/ modules (especially for loading data and saving models) are correct to avoid errors.
 
-3. Run Unit Tests:
-   pytest tests/
+### 2. Run the Training Pipeline
+ - python main.py
+ - Alternatively, use pre-trained models stored in the models/ directory for inference or experimentation.
 
-Future Work
------------
-- Integrate deep learning models such as BiLSTM or BERT for improved performance.
-- Enhance preprocessing to handle emojis, slang, and informal language.
-- Deploy the model as a web service using FastAPI with a frontend interface.
-- Develop a Streamlit or dashboard interface for interactive visualization and analysis.
+### 3. Run Unit Tests
+ - pytest tests/
 
-Author
-------
-Prabhu Teja  
-Email: prabhuteja124@gmail.com  
-GitHub: https://github.com/Prabhuteja124
 
-License
--------
-This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Future Work
+- Integrate deep learning models (e.g., BiLSTM, BERT) for improved accuracy.
+- Enhance text preprocessing to handle emojis, abbreviations, and informal language.
+- Build an API using FastAPI to serve predictions as a web service.
+- Create a user interface using Streamlit or another dashboard framework for live interaction.
+
+### Author
+##Prabhu Teja
+
+📧 Email: prabhuteja124@gmail.com
+🔗 GitHub: github.com/Prabhuteja124
+ 
