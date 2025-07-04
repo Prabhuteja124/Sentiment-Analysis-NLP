@@ -15,21 +15,23 @@ This project implements a modular and extensible Natural Language Processing (NL
 
 ---
 
+
 ## Project Structure
-- Sentiment-Analysis-NLP/
-    ├── data/                    # Raw and processed datasets
-    ├── models/                  # Trained model files
-    ├── notebooks/               # Jupyter notebooks for exploration
-    ├── src/                     # Source code
-    │   ├── app/                 # FastAPI application
-    │   ├── data_preprocessing/  # Text preprocessing scripts
-    │   ├── models/              # Model training and evaluation scripts
-    │   ├── utils/               # Utility functions and helpers
-    ├── tests/                   # Unit tests for preprocessing and pipeline
-    ├── requirements.txt         # Python dependencies
-    ├── main.py                  # Main script to run the training pipeline
-    ├── .gitignore               # Git ignore file
-    └── README.md                # Project documentation.
+
+Sentiment-Analysis-NLP/
+├── data/ # Raw and processed datasets
+├── models/ # Trained model files
+├── notebooks/ # Jupyter notebooks for exploration
+├── src/ # Source code
+│ ├── app/ # FastAPI application
+│ ├── data_preprocessing/ # Text preprocessing scripts
+│ ├── models/ # Model training and evaluation scripts
+│ ├── utils/ # Utility functions and helpers
+├── tests/ # Unit tests for preprocessing and pipeline
+├── requirements.txt # Python dependencies
+├── main.py # Main script to run the training pipeline
+├── .gitignore # Git ignore file
+└── README.md # Project documentation
 
 
 ---
