@@ -40,33 +40,37 @@ Sentiment-Analysis-NLP/
 
 ## Installation
 
-
 1. Clone the Repository:
-   - git clone https://github.com/Prabhuteja124/Sentiment-Analysis-NLP.git
-   - cd Sentiment-Analysis-NLP
+
+- git clone https://github.com/Prabhuteja124/Sentiment-Analysis-NLP.git
+- cd Sentiment-Analysis-NLP
 
 2. Create and Activate a Virtual Environment:
-   ## python -m venv venv
 
-   ### On Windows:
-    - venv\Scripts\activate
+## python -m venv venv
 
-   ### On Linux/Mac:
-   - source venv/bin/activate
+- venv\Scripts\activate (On Windows)
+
+- source venv/bin/activate(On Linux/Mac)
 
 3. Install Dependencies:
-   - pip install -r requirements.txt
+   
+- pip install -r requirements.txt
 
 ## Usage
 
 1. Update Data Paths:
-   - Ensure the data paths in the `src/` folder are correctly set to avoid errors.
+
+- Ensure the data paths in the `src/` folder are correctly set to avoid errors.
+
 2. Run the Training Pipeline:
-   - python main.py
-   - Alternatively, use pre-trained models located in the `models/` directory for inference or further            experimentation.
+
+- python main.py
+- Alternatively, use pre-trained models located in the `models/` directory for inference or further            experimentation.
 
 3. Run Unit Tests:
-   - pytest tests/
+
+- pytest tests/
 
 ## Future Work
 
