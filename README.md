@@ -21,7 +21,7 @@ Sentiment-Analysis-NLP/
 ├── models/                  # Trained model files
 ├── notebooks/               # Jupyter notebooks for exploration
 ├── src/                     # Source code
-│   ├── app/                 # FastAPI application (optional)
+│   ├── app/                 # FastAPI application
 │   ├── data_preprocessing/  # Text preprocessing scripts
 │   ├── models/              # Model training and evaluation scripts
 │   ├── utils/               # Utility functions and helpers
