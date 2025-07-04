@@ -41,7 +41,6 @@ class DataLoader():
         X=df[[columns_list[0]]] 
         y=df[columns_list[1]]
         X_train,X_test,y_train,y_test=train_test_split(X,y,stratify=y,random_state=42,test_size=test_size)
-        # X_train=np.array(X_train)
         print(f'Split Done : Training samples = {len(X_train)} | Testing samples = {len(X_test)} ')
         print(f'X_train type: {type(X_train)}, shape: {X_train.shape}')
         print(f'y_train type: {type(y_train)}, shape: {y_train.shape}')
